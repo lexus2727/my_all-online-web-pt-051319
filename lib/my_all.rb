@@ -8,11 +8,11 @@ def my_all?(collection)
   #create while iterator
   #using .length allows the while to iterate through each element in the collecton
   while i < collection.length
-  binding.pry
+  
   #yields each element in the collection to the block 
   #then adds return values to new array
      block_return_values << yield(collection[i])
-   
+   binding.pry
      i = i + 1 #incrementes counter i+= 1
   end
   block_return_values     #returning new array
